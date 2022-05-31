@@ -1,4 +1,4 @@
-const tail = (a) => a.slice(1).join(",");
+const tail = (a) => a.slice(1).join(","); // or not join - if not need a string
 const assertEqual = function(actual, expected) {
   return actual === expected
     ? console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`) : console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
