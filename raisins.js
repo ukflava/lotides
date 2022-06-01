@@ -1,23 +1,23 @@
 const raisinAlarm = function(cookie) {
   return cookie.includes("🍇") ? "Raisin alert!" : "All good";
-  
-  // for loop
-  //  for (let ingredient of cookie) {
-  //    // if statement
-  //    if (ingredient === "🍇"){return "Raisin alert!"}
-  //    else {return "All good"}
-
-  //       console.log(ingredient)
-
-  //Function
-  // var i = cookie.length;
-  // while (i--) {
-  //    if (cookie[i] === "🍇") {
-  //        return "Raisin alert!";
-  //    }
-  // }
-  // return "All good";
 };
+// for loop
+//  for (let ingredient of cookie) {
+//    // if statement
+//    if (ingredient === "🍇"){return "Raisin alert!"}
+//    else {return "All good"}
+
+//       console.log(ingredient)
+
+//Function
+// var i = cookie.length;
+// while (i--) {
+//    if (cookie[i] === "🍇") {
+//        return "Raisin alert!";
+//    }
+// }
+// return "All good";
+
 
 // return ingredient === "z" ? "Raisin alert!" : "All good"
 // }
