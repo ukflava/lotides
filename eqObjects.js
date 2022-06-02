@@ -5,6 +5,9 @@
 
 const eqArrays = function(array1, array2) {
   let i = array1.length;
+  if (array1.length !== array2.length) {
+    return false;
+  }
   while (i--) {
     if (array1[i] !== array2[i]) return false;
   }
@@ -16,10 +19,13 @@ const eqObjects = function(obj1, obj2) {
     return false;
   }
   for (let key of Object.keys(obj1)) {
-    if (obj1[key] !== obj2[key]) {
+    if (Array.isArray(obj1[key])) {
+
+      return eqArrays(obj1[key],obj2[key]);
+    } else if (obj1[key] !== obj2[key]) {
       return false;
     }
-  
+     
 
   
   }
@@ -42,11 +48,11 @@ const eqObjects = function(obj1, obj2) {
 // const abc = { a: "1", b: "2", c: "3" };
 // eqObjects(ab, abc); // => false
 
-
+// console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"])); // => true
 const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
 console.log(eqObjects(cd, dc)); // => true
 
-const cd2 = { c: "1", d: ["2", 3, 4] };
-console.log(eqObjects(cd, cd2)); // => false
+// const cd2 = { c: "1", d: ["2", 3, 4] };
+// console.log(eqObjects(cd, cd2)); // => false
 
