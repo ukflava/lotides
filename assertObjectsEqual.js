@@ -29,7 +29,7 @@ const assertObjectEq = function(actual, expected) {
   return eqObjects(actual,expected) === true
     ? console.log(`✅✅✅Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`) : console.log(`🛑🛑🛑Assertion Failed: ${inspect(actual)} !== ${inspect(expected)}`);
 };
-// const cd = { c: "1", d: ["2", 3] };
-// const dc = { d: ["2", 3], c: "1" };
-// console.log(eqObjects(cd, dc)); // => true
-// assertObjectEq(cd, dc);
+const cd = { c: "1", d: ["2", 3] };
+const dc = { d: ["2", 3], c: "1" };
+console.log(eqObjects(cd, dc)); // => true
+assertObjectEq(cd, dc);

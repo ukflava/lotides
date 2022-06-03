@@ -6,9 +6,9 @@ const assertEqual = function(actual, expected) {
 // assertEqual("Lighthouse Labs", "Bootcamp");
 // assertEqual(1, 1);
 
-const findKeyByValue = function(ObjData, argument) {
-  for (let value in ObjData) {
-    if (ObjData[value] === argument) {
+const findKeyByValue = function(obj, argument) {
+  for (let value in obj) {
+    if (obj[value] === argument) {
       return value;
     }
   }
@@ -17,7 +17,7 @@ const findKeyByValue = function(ObjData, argument) {
 
 
 const bestTVShowsByGenre = {
-  sci_fi: "The Expanse",
+  
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
 };

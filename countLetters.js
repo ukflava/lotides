@@ -11,5 +11,5 @@ const countLetters = function(str) {
   return answer;
 };
 console.log(countLetters("lighthouse in the house"));
-// assertEqual("Lighthouse Labs", "Bootcamp");
-// assertEqual(1, 1);
+assertEqual("Lighthouse Labs", "Bootcamp");
+assertEqual(1, 1);

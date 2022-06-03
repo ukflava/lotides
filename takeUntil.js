@@ -13,21 +13,21 @@
 
 // console.log(results1);
 
-// if we need slice 
+// if we need slice
 
 const takeUntil = function(array, callback) {
-  let answer = []
+  let answer = [];
   for (let item in array) {
-    if (callback(array[item]) === true){
+    if (callback(array[item]) === true) {
       break;
     } else {
-      answer.push(array[item])
+      answer.push(array[item]);
     }
 
-  } return answer
-}
+  } return answer;
+};
 
-// const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
-// const results1 = takeUntil(data1, x => x < 0);
+const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
+const results1 = takeUntil(data1, x => x < 0);
 
-// console.log(results1);
+console.log(results1);
