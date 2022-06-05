@@ -3,7 +3,7 @@
 //     ? console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`) : console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
 // };
 
-const eqArrays = function(array1, array2) {
+function eqArrays (array1, array2) {
   let i = array1.length;
   if (array1.length !== array2.length) {
     return false;
@@ -14,7 +14,7 @@ const eqArrays = function(array1, array2) {
   return true;
 };
 
-const eqObjects = function(obj1, obj2) {
+function eqObjects(obj1, obj2) {
   if (Object.keys(obj1).length !== Object.keys(obj2).length)  {
     return false;
   }
@@ -22,7 +22,10 @@ const eqObjects = function(obj1, obj2) {
     if (Array.isArray(obj1[key])) {
 
       return eqArrays(obj1[key],obj2[key]);
-    } else if (obj1[key] !== obj2[key]) {
+    } 
+  else if (typeof obj1[key] ==='object'){ return eqObjects(obj1[key], obj2[key])}
+    
+    else if (obj1[key] !== obj2[key]) {
       return false;
     }
      
@@ -49,10 +52,12 @@ const eqObjects = function(obj1, obj2) {
 // eqObjects(ab, abc); // => false
 
 // console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"])); // => true
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-console.log(eqObjects(cd, dc)); // => true
+// const cd = { c: "1", d: ["2", 3] };
+// const dc = { d: ["2", 3], c: "1" };
+// console.log(eqObjects(cd, dc)); // => true
 
 // const cd2 = { c: "1", d: ["2", 3, 4] };
 // console.log(eqObjects(cd, cd2)); // => false
 
+
+module.exports = eqObjects;

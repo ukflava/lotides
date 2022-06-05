@@ -1,52 +1,30 @@
-// // const assertEqual = function(actual, expected) {
-// //   return actual === expected
-// //     ? console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`) : console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
-// // };
-
-// const eqArrays = function(array1, array2) {
-//   let i = array1.length;
-//   while (i--) {
-//     if (array1[i] !== array2[i]) return false;
-//   }
-//   return true;
-// };
-
-// const eqObjects = function(obj1, obj2) {
-//   if (Object.keys(obj1).length !== Object.keys(obj2).length)  {
-//     return false;
-//   }
-//   for (let key of Object.keys(obj1)) {
-//     if (obj1[key] !== obj2[key]) {
-//       return false;
-//     }
-  
-
-  
-//   }
-//   return true;
-
-     
-
-// };
-  
-// // assertEqual("Lighthouse Labs", "Bootcamp");
-// // assertEqual(1, 1);
-
-// // const eqObjects = function(object1, object2) {
-// // };
-// // const abc = { a: "1", b: "2", c: "3" };
-// // const ab = { a: "1", b: "2" };
-// // const ba = { b: "2", a: "1" };
-// // console.log(eqObjects(ab, ba)); // => true
-
-// // const abc = { a: "1", b: "2", c: "3" };
-// // eqObjects(ab, abc); // => false
+const students = [
+  { id: 1, name: "bruce",    age: 40 },
+  { id: 2, name: "zoidberg", age: 22 },
+  { id: 3, name: "alex",     age: 22 },
+  { id: 4, name: "alex",     age: 30 }
+];
+console.log(students.sort( (a,b)=> (a.name > b.name || a.age > b.age ? 1 : -1))) ;
 
 
-// const cd = { c: "1", d: ["2", 3] };
-// const dc = { d: ["2", 3], c: "1" };
-// console.log(eqObjects(cd, dc)); // => true
+// let sorter = (a,b) => {a.name - b.name}
+// console.log(sorter(students))
 
-// const cd2 = { c: "1", d: ["2", 3, 4] };
-// console.log(eqObjects(cd, cd2)); // => false
 
+
+
+// const input = [
+//   { x: 3, y: 4 },
+//   { x: 12, y: 5 },
+//   { x: 8, y: 15 }
+// ];
+// const result = input.map(function(ii){
+//   return (Math.pow((ii.x*ii.x + ii.y*ii.y), 0.5))
+//   // `${element.firstName} ${element.lastName}`;
+// })
+ 
+//   // (x, y) => x+= Math.sqrt(x*x+y*y));
+
+// console.log(result[0] === 5);
+// console.log(result[1] === 13);
+// console.log(result[2] === 17);
