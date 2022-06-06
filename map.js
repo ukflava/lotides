@@ -11,4 +11,4 @@ module.exports = map;
 
 // console.log(results1);
 // console.log(assertArraysEqual(map(words, word => word[0]),[ 'g', 'c', 't', 'm', 't' ]));
-// console.log(assertArraysEqual(map(words, word => word.toLowerCase()),["ground", "control", "to", "major", "tom"]));
+console.log(map(["hello", "world"], word => word[0]));

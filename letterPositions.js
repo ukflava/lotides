@@ -8,7 +8,7 @@ const letterPositions = function(sentence) {
   return answer;
 };
 module.exports = letterPositions;
-// console.log(letterPositions("abgabb"));
+console.log(letterPositions("lighthouse in the house"));
 
 
 
