@@ -1,6 +1,6 @@
 const chai = require('chai');
 const expect = chai.expect;
-const assert = chai.assert
+const assert = chai.assert;
 const eqObjects = require('../eqObjects');
 
 describe('eqObjects', function() {
@@ -16,12 +16,12 @@ describe('eqObjects', function() {
   });
   it('equal objects are true', () => {
     const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
+    const ba = { b: "2", a: "1" };
     assert.isTrue(eqObjects(ab, ba));
   });
   it(' not equal objects are false', () => {
     const ab = { a: "1", b: "2" };
-const ba = { b: "4", a: "1" };
+    const ba = { b: "4", a: "1" };
     assert.isFalse(eqObjects(ab, ba));
   });
   it('object with same nested arrays are true', () => {

@@ -2,19 +2,9 @@
 //   return actual === expected
 //     ? console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`) : console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
 // };
+const eqArrays = require('./eqArrays');
 
-function eqArrays (array1, array2) {
-  let i = array1.length;
-  if (array1.length !== array2.length) {
-    return false;
-  }
-  while (i--) {
-    if (array1[i] !== array2[i]) return false;
-  }
-  return true;
-};
-
-function eqObjects(obj1, obj2) {
+const eqObjects = function(obj1, obj2) {
   if (Object.keys(obj1).length !== Object.keys(obj2).length)  {
     return false;
   }
@@ -22,10 +12,9 @@ function eqObjects(obj1, obj2) {
     if (Array.isArray(obj1[key])) {
 
       return eqArrays(obj1[key],obj2[key]);
-    } 
-  else if (typeof obj1[key] ==='object'){ return eqObjects(obj1[key], obj2[key])}
-    
-    else if (obj1[key] !== obj2[key]) {
+    } else if (typeof obj1[key] === 'object') {
+      return eqObjects(obj1[key], obj2[key]);
+    } else if (obj1[key] !== obj2[key]) {
       return false;
     }
      
@@ -37,6 +26,7 @@ function eqObjects(obj1, obj2) {
      
 
 };
+module.exports = eqObjects;
   
 // assertEqual("Lighthouse Labs", "Bootcamp");
 // assertEqual(1, 1);

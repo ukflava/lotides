@@ -4,7 +4,7 @@ const students = [
   { id: 3, name: "alex",     age: 22 },
   { id: 4, name: "alex",     age: 30 }
 ];
-console.log(students.sort( (a,b)=> (a.name > b.name || a.age > b.age ? 1 : -1))) ;
+console.log(students.sort((a,b)=> (a.name > b.name || a.age > b.age ? 1 : -1)));
 
 
 // let sorter = (a,b) => {a.name - b.name}
