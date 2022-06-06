@@ -6,14 +6,14 @@ const eqArrays = require('../eqArrays');
 // save both assert and expect to remember proper syntaxis
 
 
-describe('eqArrays', function() {
-  it('different arrays are false', () => {
+describe('#Scan all values in given Arrays', function() {
+  it('arrays are not equal', () => {
     assert.isFalse(eqArrays(["1", "2", "3"], ["1", "2", 3]));
   });
-  it('same Arrays are true', () => {
+  it('equal Arrays are true', () => {
     assert.isTrue(eqArrays(["1", "2", "3"], ["1", "2", "3"]));
   });
-  it('different nested arrays are false', () => {
+  it('different nested arrays gives false', () => {
     assert.isFalse(eqArrays([[2, 3], [4]], [[2, 3], 4]));
   });
   it('same nested arrays are true', () => {

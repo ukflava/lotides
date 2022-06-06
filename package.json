@@ -3,9 +3,9 @@
     "chai": "^4.3.6",
     "mocha": "^10.0.0"
   },
-  "name": "lotide",
-  "version": "1.0.0",
-  "main": "assertArraysEqual.js",
+  "name": "@ukflava/lotide",
+  "version": "1.0.1",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -97,11 +97,11 @@
     "type": "git",
     "url": "git+https://github.com/ukflava/lotides.git"
   },
-  "author": "",
+  "author": "Denis K. (ukflava)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ukflava/lotides/issues"
   },
   "homepage": "https://github.com/ukflava/lotides#readme",
-  "description": ""
+  "description": "was published for learning purposes"
 }

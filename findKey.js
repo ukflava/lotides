@@ -1,8 +1,3 @@
-// const assertEqual = function(actual, expected) {
-//   return actual === expected
-//     ? console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`) : console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
-// };
-
 // const findKey = function(obj, cb) {
 //   // let values = Object.values(obj)
 //   for (let value of Object.entries(obj)) {

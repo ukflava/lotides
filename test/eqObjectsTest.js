@@ -3,7 +3,7 @@ const expect = chai.expect;
 const assert = chai.assert;
 const eqObjects = require('../eqObjects');
 
-describe('eqObjects', function() {
+describe('#Compare all entries in an Objects', function() {
   it('objects with same arrays are true', () => {
     const cd = { c: "1", d: ["2", 3] };
     const dc = { d: ["2", 3], c: "1" };

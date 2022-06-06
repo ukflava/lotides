@@ -7,6 +7,4 @@ const countLetters = function(str) {
   return answer;
 };
 module.exports = countLetters;
-// console.log(countLetters("lighthouse in the house"));
-// assertEqual("Lighthouse Labs", "Bootcamp");
-// assertEqual(1, 1);
+// console.log(countLetters("lighthouse"));
