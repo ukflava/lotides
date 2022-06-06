@@ -1,5 +1,6 @@
-let answer = [];
+
 const without = function(source, remove) {
+  let answer = [];
   for (let i = 0; i < source.length; i++) {
     if (!remove.includes(source[i])) {
       answer.push(source[i]);
@@ -8,4 +9,5 @@ const without = function(source, remove) {
   return answer;
 };
 
-console.log(without(["hello", "world", "lighthouse"],["hello", "wod", "lighthouse"]));
+module.exports = without;
+// console.log(without(["hello", "world", "lighthouse"],["hello", "wod", "lighthouse"]));

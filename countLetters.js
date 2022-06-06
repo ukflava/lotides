@@ -1,7 +1,3 @@
-const assertEqual = function(actual, expected) {
-  return actual === expected
-    ? console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`) : console.log(`🛑🛑🛑Assertion Failed: ${actual} !== ${expected}`);
-};
 const countLetters = function(str) {
   let answer = {};
   for (let letter of str.replace(/\s+/g, "").toLowerCase()) {
@@ -10,6 +6,7 @@ const countLetters = function(str) {
 
   return answer;
 };
-console.log(countLetters("lighthouse in the house"));
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+module.exports = countLetters;
+// console.log(countLetters("lighthouse in the house"));
+// assertEqual("Lighthouse Labs", "Bootcamp");
+// assertEqual(1, 1);
